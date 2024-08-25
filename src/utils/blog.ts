@@ -198,7 +198,8 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
   if (!isBlogEnabled || !isBlogCategoryRouteEnabled) return [];
 
   const posts = await fetchPosts();
-  const categories = {};
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const categories: any = {};
   posts.map((post) => {
     post.category?.slug && (categories[post.category?.slug] = post.category);
   });
@@ -220,7 +221,8 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
   if (!isBlogEnabled || !isBlogTagRouteEnabled) return [];
 
   const posts = await fetchPosts();
-  const tags = {};
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const tags: any = {};
   posts.map((post) => {
     Array.isArray(post.tags) &&
       post.tags.map((tag) => {
