@@ -1,10 +1,10 @@
 site:
   name: Susanne Roesner
-  site: 'https://sueroesner.com'
-  base: '/'
+  site: 'https://sueroesner.github.io'
+  base: '/portfolio-website'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  # googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:

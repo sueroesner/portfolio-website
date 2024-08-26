@@ -11,6 +11,7 @@
     "start": "astro dev",
     "start:host": "astro dev --host",
     "build": "astro check && astro build",
+    "check": "astro check",
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier -w .",
