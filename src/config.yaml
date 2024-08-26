@@ -1,5 +1,5 @@
 site:
-  name: Susanne Rösner
+  name: Susanne Roesner
   site: 'https://astrowind.vercel.app'
   base: '/'
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Susanne Rösner
-    template: '%s — Susanne Rösner'
+    default: Susanne Roesner
+    template: '%s — Susanne Roesner'
   description: 'Writer and PhD Student at Swansea University'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Susanne Rösner
+    site_name: Susanne Roesner
     images:
       - url: '~/assets/images/default.png'
         width: 1200

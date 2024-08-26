@@ -11,7 +11,7 @@ import Hero from '~/components/widgets/Hero.astro';
 // import FAQs from '~/components/widgets/FAQs.astro';
 
 const metadata = {
-  title: 'Susanne Rösner - Portfolio',
+  title: 'Susanne Roesner - Portfolio',
   ignoreTitleTemplate: true,
 };
 ---
@@ -19,13 +19,13 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero image={{ src: '~/assets/images/forest-writing.webp', alt: 'AstroWind Hero Image' }}>
+  <Hero image={{ src: '~/assets/images/foggy-forest.jpg', alt: 'AstroWind Hero Image' }}>
     <Fragment slot="title">
-      Hello I am <span class="text-accent dark:text-white highlight"> Susanne Rösner</span>
+      <span class="text-accent dark:text-white highlight">Susanne Roesner</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline"> I am very cute and lovely.</span>
+      <span class="sm:inline">Writing about nature and climate</span>
       <!-- <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> -->
     </Fragment>
   </Hero>

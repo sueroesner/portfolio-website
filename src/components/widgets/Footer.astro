@@ -21,10 +21,11 @@ export interface Props {
   secondaryLinks: Array<Link>;
   socialLinks: Array<Link>;
   footNote?: string;
+  footLinks?: Array<Link>;
   theme?: string;
 }
 
-const { socialLinks = [], theme = 'light', footNote = '' } = Astro.props;
+const { socialLinks = [], theme = 'light', footLinks = [], footNote = '' } = Astro.props;
 ---
 
 <footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
@@ -81,7 +82,20 @@ const { socialLinks = [], theme = 'light', footNote = '' } = Astro.props;
           </div>
         ))
       } -->
-      <div class="flex justify-center col-span-12 text-muted hover:text-gray-700 hover:underline dark:text-gray-400">
+      <div
+        class="flex flex-col gap-4 items-center justify-center col-span-12 text-muted hover:text-gray-700 dark:text-gray-400"
+      >
+        <ul class="flex gap-2">
+          {
+            footLinks.map(({ text, ariaLabel, href }) => (
+              <li class="flex gap-2 footer-link">
+                <a class="hover:underline" href={href} aria-label={ariaLabel}>
+                  {text}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
         {footNote}
       </div>
     </div>

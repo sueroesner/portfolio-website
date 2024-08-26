@@ -90,3 +90,17 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.impressum {
+  h2 {
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer-link {
+  &:not(:last-child)::after {
+    content: '-';
+  }
+}
