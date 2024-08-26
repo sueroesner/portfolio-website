@@ -26,8 +26,7 @@ const whenExternalScripts = (items = []) =>
 
 export default defineConfig({
   output: 'static',
-  site: 'https://sueroesner.github.io',
-  base: '/portfolio-website',
+  site: 'https://sueroesner.com',
 
   integrations: [
     tailwind({
