@@ -1,10 +1,9 @@
 import { getPermalink } from './utils/permalinks';
 
 const socialLinks = [
-  { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-  { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
+  { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://www.x.com/sueroesner/' },
+  { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://de.linkedin.com/in/s-roesner' },
   { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/sue.roesner/' },
-  { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
 ];
 
 export const headerData = {
@@ -61,19 +60,12 @@ export const footerData = {
     //   ],
     // }
   ],
-  socialLinks,
+  //socialLinks,
   secondaryLinks: [
     // { text: 'Terms', href: getPermalink('/terms') },
     // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  // socialLinks: [
-  //   { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-  //   { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-  //   { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-  // ],
+  socialLinks,
   footNote: '© 2024 Susanne Roesner. All Rights Reserved.',
-  footLinks: [
-    { text: 'Impressum', href: getPermalink('/impressum') },
-    { text: 'Privacy', href: getPermalink('/impressum') },
-  ],
+  footLinks: [{ text: 'Impressum & Datenschutz', href: getPermalink('/impressum') }],
 };

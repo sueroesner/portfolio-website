@@ -1,6 +1,6 @@
 site:
   name: Susanne Roesner
-  site: 'https://astrowind.vercel.app'
+  site: 'https://sueroesner.com'
   base: '/'
   trailingSlash: false
 
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@SueRoesner'
+    site: '@SueRoesner'
     cardType: summary_large_image
 
 i18n:

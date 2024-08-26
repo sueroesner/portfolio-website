@@ -92,7 +92,11 @@
 }
 
 .impressum {
+  p {
+    margin-bottom: 1rem;
+  }
   h2 {
+    font-size: large;
     font-weight: bold;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
