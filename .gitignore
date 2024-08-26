@@ -1,5 +1,4 @@
 # build output
-dist/
 .output/
 
 # dependencies
@@ -22,3 +21,4 @@ pnpm-debug.log*
 pnpm-lock.yaml
 
 .astro
+.vscode
