@@ -59,9 +59,9 @@ if (typeof _image === 'string') {
   !image ? (
     <Fragment />
   ) : (
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-2 items-stretch">
       <img src={image.src} crossorigin="anonymous" referrerpolicy="no-referrer" {...image.attributes} />
-      <span class="text-xs text-muted">{props.subtitle}</span>
+      <span class="text-xs text-muted max-w-[1024px] self-center w-full">{props.subtitle}</span>
     </div>
   )
 }
