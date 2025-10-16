@@ -1,8 +1,8 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
+import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
 // import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
@@ -18,8 +18,6 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
-
   <Hero
     image={{
       src: '~/assets/images/foggy-forest.jpg',
@@ -34,10 +32,77 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="sm:inline">Writing about Human-Nature Relationships & From More-Than-Human Perspectives</span>
     </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-white dark:bg-transparent"></div>
+    </Fragment>
   </Hero>
-
   <Content
     isReversed
+    tagline="About Susanne"
+    title="Writing Interests"
+    image={{
+      src: '~/assets/images/susanne.jpg',
+      alt: 'Suanne in the forest',
+    }}
+  >
+    <!-- // classes={{ container: 'pt-2 lg:pt-2 md:pt-2' }} -->
+    <Fragment slot="content">
+      <!-- <h2 class="font-bold text-green-600 text-2xl mb-2">About Susanne</h2> -->
+      <p class="block mb-1">
+        Susanne Roesner is a writer and academic, currently working on a novel about hopeful, sustainable, and resilient
+        visions of the future.
+      </p>
+      <p class="block mb-4">
+        She writes in English and German and has written short stories, essays, and (blog-) articles for the Swansea
+        Review, the Richard Burton Archives, and the magazine <span class="whitespace-no-wrap italic inline-block"
+          >Der PalmenGarten 2024</span
+        >.
+      </p>
+      <p class="block mb-1 italic">
+        Susanne Roesner schreibt Kurzgeschichten, Essays und an einem Roman, der Fragen zu hoffnungsvollen, nachhaltigen
+        und resilienten Zukunftsvisionen stellt.
+      </p>
+      <p class="block mb-1 italic">
+        Sie schreibt in deutscher und englischer Sprache und hat Blogartikel und Essays für die Swansea Review, die
+        Richard Burton Archives für die Zeitschrift <span class="whitespace-no-wrap not-italic inline-block"
+          >Der PalmenGarten 2024</span
+        > verfasst.
+      </p>
+      <!-- <div class=`max-w-7xl mx-auto text-muted text-xl mt-4 text-center px-6 sm:px-12 py-16 py:mb-20`> -->
+      <!-- <Headline
+      title={title}
+      subtitle={subtitle}
+      tagline={tagline}
+      classes={classes?.headline as Record<string, string>}
+    /> -->
+
+      <!-- <p class="block mb-1">
+          Susanne Roesner is an emerging writer and academic.
+          currently working on a novel for her Creative Writing PhD at
+      Swansea University. Her research focuses on framing climate change mitigation and adaptation efforts in an
+      inclusive and hopeful path forward.
+        </p> -->
+
+      <!-- <p class="block mb-1">
+      She teaches writing workshops on Solarpunk imaginaries, and insect and biodiversity loss, as part of her work at
+      the Palmengarten Frankfurt.
+    </p> -->
+      <!-- <p class="block mb-1">
+          Her recent short story <i>Of Creatures and Caretakers</i>, exploring the perspective of an oak tree, was
+          included in the XR Wordsmiths' 2023 Solarpunk Storytelling Showcase.
+        </p> -->
+      <!-- <p class="block mb-1">
+     
+    </p> -->
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:dark:bg-green-950"></div>
+    </Fragment>
+  </Content>
+  <!-- Hero Widget ******************* -->
+
+  <Content
     tagline="Susanne's Short Stories"
     title="Human and Non-Human Emotions"
     image={{
@@ -77,37 +142,47 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-green-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-white dark:bg-transparent"></div>
     </Fragment>
   </Content>
-  <div class=`max-w-7xl mx-auto text-muted text-xl mt-4 text-center px-6 sm:px-12 py-16 py:mb-20`>
-    <!-- <Headline
-      title={title}
-      subtitle={subtitle}
-      tagline={tagline}
-      classes={classes?.headline as Record<string, string>}
-    /> -->
-    <h2 class="font-bold text-green-600 text-2xl mb-2">About Susanne</h2>
-    <p class="block mb-1">
-      Susanne Roesner is an emerging writer and academic.
-      <!-- currently working on a novel for her Creative Writing PhD at
-      Swansea University. Her research focuses on framing climate change mitigation and adaptation efforts in an
-      inclusive and hopeful path forward. -->
-    </p>
+  <Content
+    isReversed
+    tagline="Essay"
+    title="Insekten in Gegenwart und Zukunft"
+    image={{
+      src: '~/assets/images/jozsef-szabo-insects-unsplash.jpg',
+      alt: 'Insects on Flowers',
+      subtitle: 'Image by József Szabó on Unsplash',
+      aspectRatio: '1.5',
+    }}
+    callToAction={{
+      text: 'Read More →',
+      href: 'https://ojs.ub.uni-frankfurt.de/Palmengarten/index.php/Palmengarten/article/view/2615/2582',
+      target: 'blank',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Wer summt im Garten der Zukunft?
+      </h3>
+      <p class="mb-2 text-sm text-muted italic">
+        Wie können Kunst und Literatur unsere Wahrnehmung schärfen und uns helfen, hoffnungsvolle Szenarien für die
+        Zukunft zu entwickeln?
+      </p>
+      <div class="text-muted">
+        <p class="mb-2">
+          Ein sonniger Juli-Nachmittag im Botanischen Garten Frankfurt, der ideale Zeitpunkt für einen
+          Fotographie-Workshop rund um Blüten und Bestäuber: Durch die Linsen unserer Kameras beobachten wir die feinen
+          Bewegungen verschiedener Insekten im Arzneipflanzengarten und tauchen ein in eine Welt, die wir im Alltag
+          schnell mal übersehen.
+        </p>
+      </div>
+    </Fragment>
 
-    <!-- <p class="block mb-1">
-      She teaches writing workshops on Solarpunk imaginaries, and insect and biodiversity loss, as part of her work at
-      the Palmengarten Frankfurt.
-    </p> -->
-    <p class="block mb-1">
-      Her recent short story <i>Of Creatures and Caretakers</i>, exploring the perspective of an oak tree, was included
-      in the XR Wordsmiths' 2023 Solarpunk Storytelling Showcase.
-    </p>
-    <!-- <p class="block mb-1">
-      She has written (blog-) articles in English and German for the Swansea Review, the Richard Burton Archives, and
-      the magazine <span class="whitespace-no-wrap italic inline-block">Der PalmenGarten 2024</span>.
-    </p> -->
-  </div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-green-50 dark:bg-green-950"></div>
+    </Fragment>
+  </Content>
 </Layout>
 
 <!-- Features Widget *************** -->

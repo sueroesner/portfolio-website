@@ -1,7 +1,7 @@
 import { getPermalink } from './utils/permalinks';
 
 const socialLinks = [
-  { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://www.x.com/sueroesner/' },
+  // { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://www.x.com/sueroesner/' },
   { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://de.linkedin.com/in/s-roesner' },
   { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/sue.roesner/' },
 ];
@@ -66,6 +66,6 @@ export const footerData = {
     // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks,
-  footNote: '© 2024 Susanne Roesner. All Rights Reserved.',
+  footNote: '© 2025 Susanne Roesner. All Rights Reserved.',
   footLinks: [{ text: 'Impressum & Datenschutz', href: getPermalink('/impressum') }],
 };
